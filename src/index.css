@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Aplica colores globales usando las clases de Tailwind */
+@layer base {
+  body {
+    @apply bg-background text-textmain;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
