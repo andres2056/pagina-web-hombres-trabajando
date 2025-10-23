@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-primary text-white fixed w-full z-50">
+  <header class="bg-[#5a504f] text-white fixed w-full z-50">
     <nav class="container mx-auto px-4 py-3 flex justify-between">
       <h1 class="font-bold">Hombres Trabajando</h1>
       <ul class="flex gap-6">

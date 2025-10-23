@@ -1,22 +1,22 @@
 <template>
   <div>
-    <section id="inicio" class="min-h-screen flex items-center justify-center bg-background">
+    <section id="inicio" class="min-h-screen flex items-center justify-center bg-[#9d9d9d]">
       <Hero />
     </section>
 
-    <section id="servicios" class="py-16 bg-gray-100">
+    <section id="servicios" class="py-16 bg-[#9d9d9d]">
       <Servicios />
     </section>
 
-    <section id="proyectos" class="py-16 bg-gray-100">
+    <!-- <section id="proyectos" class="py-16 bg-[#9d9d9d]">
       <Proyectos />
-    </section>
+    </section> -->
 
-    <section id="contacto" class="py-16 bg-gray-100">
+    <section id="contacto" class="py-16 bg-[#9d9d9d]">
       <Contacto />
     </section>
 
-    <section id="footer" class="py-16 bg-gray-100">
+    <section id="footer" class="py-16 bg-[#5a504f]">
       <Footer />
     </section>
   </div>

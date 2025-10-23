@@ -1,51 +1,48 @@
 <template>
-  <section id="servicios" class="w-full bg-gray-100 py-12">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-primary text-center mb-4">Servicios</h2>
-      <p class="text-center text-textmain max-w-2xl mx-auto mb-10">
-        Ofrecemos soluciones integrales: obra gruesa, obra fina, mantenimiento y refacción,
-        instalaciones eléctricas, plomería y sistemas de seguridad.
+  <section id="servicios" class="w-full bg-[#9d9d9d]/20 py-20">
+    <div class="px-0 lg:px-0">
+      <h2 class="text-4xl font-extrabold text-[#5a504f] text-center mb-6">
+        Servicios
+      </h2>
+      <p class="text-center text-[#5a504f] max-w-3xl mx-auto mb-16">
+        Ofrecemos soluciones integrales en construcción, obra fina, mantenimiento, electricidad, plomería y sistemas de
+        seguridad.
       </p>
 
-      <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        <article
-          v-for="service in services"
-          :key="service.id"
-          class="bg-white rounded-lg shadow-sm hover:shadow-md transition p-6 flex flex-col"
-          :aria-labelledby="`svc-${service.id}-title`"
-        >
-          <div class="flex items-center gap-4">
-            <div class="flex-shrink-0 w-14 h-14 rounded-md bg-secondary/10 flex items-center justify-center">
-              <!-- Icon -->
-              <div class="w-8 h-8" v-html="service.icon" aria-hidden="true"></div>
+      <!-- GRID FULL WIDTH -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div v-for="service in services" :key="service.id"
+          class="relative group cursor-pointer overflow-hidden rounded-2xl shadow-lg transition-all duration-700 hover:shadow-2xl w-full h-[420px]"
+          @click="handleDetails(service.id)">
+          <!-- Imagen -->
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+            :style="{ backgroundImage: `url(${service.image})` }"></div>
+
+          <!-- Overlay -->
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent transition-opacity duration-500">
+          </div>
+
+          <!-- Contenido -->
+          <div class="absolute inset-0 flex flex-col justify-end p-10 text-white z-10">
+            <h3 class="text-3xl font-bold mb-3">{{ service.title }}</h3>
+            <p class="text-gray-200 text-base mb-6 max-w-xl line-clamp-3">
+              {{ service.description }}
+            </p>
+
+            <div class="flex justify-between items-center">
+              <a href="#contacto"
+                class="bg-[#fbba16] text-[#5a504f] font-semibold px-5 py-3 rounded-md shadow hover:opacity-90 transition"
+                @click.stop>
+                Solicitar presupuesto
+              </a>
+
+              <span class="text-white/80 group-hover:text-[#fbba16] transition-colors text-base font-medium">
+                Ver detalles →
+              </span>
             </div>
-
-            <h3 :id="`svc-${service.id}-title`" class="text-xl font-semibold text-primary">
-              {{ service.title }}
-            </h3>
           </div>
-
-          <p class="mt-4 text-textmain flex-1">
-            {{ service.description }}
-          </p>
-
-          <div class="mt-6 flex gap-3">
-            <a
-              href="#contacto"
-              class="inline-block bg-accent text-white px-4 py-2 rounded-md font-semibold hover:opacity-95"
-            >
-              Solicitar presupuesto
-            </a>
-
-            <button
-              @click="handleDetails(service.id)"
-              class="inline-block border border-secondary text-secondary px-3 py-2 rounded-md hover:bg-secondary/5"
-              :aria-label="`Ver más sobre ${service.title}`"
-            >
-              Ver más
-            </button>
-          </div>
-        </article>
+        </div>
       </div>
     </div>
   </section>
@@ -53,82 +50,59 @@
 
 <script setup>
 import { useRouter } from 'vue-router'
-
 const router = useRouter()
 
 const services = [
   {
     id: 'construccion',
     title: 'Construcción civil',
-    description: 'Obra gruesa, cimientos, estructura y supervisión de obra.',
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 21v-6l9-4 9 4v6" />
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 7V3h6v4" />
-    </svg>`
+    description: 'Obra gruesa, estructuras, cimientos y supervisión integral de proyectos.',
+    image: 'https://res.cloudinary.com/dughcx6qb/image/upload/v1760062602/Construcci%C3%B3n_Civil_uor8m0.jpg',
   },
   {
     id: 'electricidad',
     title: 'Servicios eléctricos',
-    description: 'Instalaciones, tableros, reparación y mantenimiento eléctrico.',
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-    </svg>`
+    description: 'Instalaciones, tableros, cableado, reparación y mantenimiento eléctrico.',
+    image: 'https://res.cloudinary.com/dughcx6qb/image/upload/v1760062602/Servicios_El%C3%A9ctricos_x6iivv.jpg',
   },
   {
     id: 'plomeria',
     title: 'Plomería',
-    description: 'Instalación y reparación de agua, desagües y soluciones sanitarias.',
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21v-2a4 4 0 014-4h2a4 4 0 004-4V7" />
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h4v4H3z" />
-    </svg>`
+    description: 'Instalación y reparación de agua, desagües, gas y sistemas sanitarios.',
+    image: 'https://res.cloudinary.com/dughcx6qb/image/upload/v1760062602/Plomer%C3%ADa_mqhbli.jpg',
   },
   {
     id: 'obra-fina',
     title: 'Obra fina',
-    description: 'Terminaciones, enlucidos, pintura y detalles para dejar todo impecable.',
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 7l7-4 11 6v8l-7 4-11-6V7z" />
-    </svg>`
+    description: 'Enlucidos, pintura, pisos, cielos falsos y terminaciones impecables.',
+    image: 'https://res.cloudinary.com/dughcx6qb/image/upload/v1760062601/Obra_Fina_snvyjl.jpg',
   },
   {
     id: 'mantenimiento',
     title: 'Mantenimiento y refacción',
-    description: 'Reparaciones generales, refacciones y mantenimiento preventivo.',
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 1v4" />
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 11l7 7 7-7"/>
-    </svg>`
+    description: 'Reparaciones, refacciones y mantenimiento preventivo general.',
+    image: 'https://res.cloudinary.com/dughcx6qb/image/upload/v1760062601/Mentenimiento_y_refacciones_zdw1zp.jpg',
   },
   {
     id: 'seguridad',
-    title: 'Instalación de cámaras',
-    description: 'Diseño e instalación de sistemas de CCTV y alarmas para su seguridad.',
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2 12s4-8 10-8 10 8 10 8-4 8-10 8S2 12 2 12z"/>
-      <circle cx="12" cy="12" r="3" stroke-width="1.2"/>
-    </svg>`
+    title: 'Cámaras de seguridad',
+    description: 'Instalación profesional de CCTV, alarmas y sistemas de monitoreo.',
+    image: 'https://res.cloudinary.com/dughcx6qb/image/upload/v1760062602/Instalacion_de_c%C3%A1maras_dzxbqa.jpg',
   },
 ]
 
-/**
- * handleDetails:
- * - Si existe una ruta /proyectos/:id la usará.
- * - Si no, hace scroll a la sección contacto como fallback seguro.
- */
 function handleDetails(id) {
   const targetPath = `/proyectos/${id}`
   const routeExists = router.getRoutes().some(r => r.path === targetPath || r.name === 'Proyecto')
-
-  if (routeExists) {
-    router.push({ path: targetPath }).catch(() => {})
-  } else {
-    const el = document.getElementById('contacto')
-    if (el) el.scrollIntoView({ behavior: 'smooth' })
-    else {
-      // si tampoco existe #contacto, vuelve al home (seguro)
-      router.push({ path: '/' }).catch(() => {})
-    }
-  }
+  if (routeExists) router.push({ path: targetPath }).catch(() => { })
+  else router.push({ path: '/' }).catch(() => { })
 }
 </script>
+
+<style scoped>
+/* Pequeño refinamiento de transición */
+.group:hover img,
+.group:hover div.bg-cover {
+  transform: scale(1.1);
+}
+</style>

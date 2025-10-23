@@ -1,7 +1,7 @@
 <template>
-  <footer class="bg-gray-900 text-gray-300 pt-12">
+  <footer class="bg-[#5a504f] text-white pt-12">
     <!-- PRIMERA FILA -->
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10 pb-10 border-b border-gray-700">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10 pb-10 border-b border-[#9d9d9d]">
       
       <!-- Columna 1 -->
       <div>
@@ -30,13 +30,13 @@
         <p class="text-sm">Av. Principal 123, Ciudad</p>
         <div class="flex space-x-4 my-3">
           <!-- Iconos de redes sociales -->
-          <a href="#" class="hover:text-white">
+          <a href="#" class="hover:text-[#fbba16]">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="#" class="hover:text-white">
+          <a href="#" class="hover:text-[#fbba16]">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="#" class="hover:text-white">
+          <a href="#" class="hover:text-[#fbba16]">
             <i class="fab fa-whatsapp"></i>
           </a>
         </div>
@@ -46,17 +46,16 @@
     </div>
 
     <!-- SEGUNDA FILA -->
-    <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+    <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center text-sm text-white">
       <p>© 2024 Hombres Trabajando. Todos los derechos reservados.</p>
       <div class="flex space-x-6 mt-4 md:mt-0">
-        <a href="#" class="hover:text-white">Política de Privacidad</a>
-        <a href="#" class="hover:text-white">Términos de Servicio</a>
-        <a href="#" class="hover:text-white">Aviso Legal</a>
+        <a href="#" class="hover:text-[#fbba16]">Política de Privacidad</a>
+        <a href="#" class="hover:text-[#fbba16]">Términos de Servicio</a>
+        <a href="#" class="hover:text-[#fbba16]">Aviso Legal</a>
       </div>
     </div>
   </footer>
 </template>
-
 <script setup>
 // Si quieres usar Font Awesome para los iconos:
 // npm install @fortawesome/fontawesome-free
