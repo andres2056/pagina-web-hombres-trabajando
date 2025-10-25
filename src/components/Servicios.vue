@@ -110,7 +110,8 @@
 </template>
 
 <script setup>
-import { ref, nextTick } from 'vue'
+import { ref, nextTick, onMounted, onUnmounted } from 'vue'
+
 
 const selectedService = ref(null)
 const modalAbierto = ref(false)
@@ -127,7 +128,7 @@ function verDetalles(id) {
     }
   })
 }
-/* --- modal handlers --- */
+// --- modal handlers ---
 function abrirModal(proyecto) {
   proyectoSeleccionado.value = proyecto
   modalAbierto.value = true
@@ -136,6 +137,12 @@ function abrirModal(proyecto) {
 function cerrarModal() {
   modalAbierto.value = false
 }
+
+// 🟢 ESTA FUNCIÓN FALTABA
+function handleGoInicio() {
+  selectedService.value = null
+}
+
 onMounted(() => {
   window.addEventListener('app-go-inicio', handleGoInicio)
 })
