@@ -9,7 +9,9 @@
         </p>
       </div>
 
+      <!-- 📦 Dos columnas lado a lado en escritorio -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+
         <!-- Información de contacto -->
         <div class="bg-white rounded-2xl p-8 shadow-xl">
           <h3 class="text-2xl font-bold text-[#5a504f] mb-8">Información de contacto</h3>
@@ -26,7 +28,7 @@
               </div>
               <div>
                 <h4 class="font-semibold text-[#5a504f] text-lg">Dirección</h4>
-                <p class="text-[#5a504f] mt-1">Av. Principal 123, Ciudad</p>
+                <p class="text-[#5a504f] mt-1">Coña, Coña Barrio Municipal #56</p>
               </div>
             </div>
 
@@ -39,7 +41,7 @@
               </div>
               <div>
                 <h4 class="font-semibold text-[#5a504f] text-lg">Teléfono</h4>
-                <p class="text-[#5a504f] mt-1">+1 (555) 123-4567</p>
+                <p class="text-[#5a504f] mt-1">+591 7222-8377</p>
               </div>
             </div>
 
@@ -52,7 +54,7 @@
               </div>
               <div>
                 <h4 class="font-semibold text-[#5a504f] text-lg">Email</h4>
-                <p class="text-[#5a504f] mt-1">info@hombrestrabajando.com</p>
+                <p class="text-[#5a504f] mt-1">nestorcarvajalht@gmail.com</p>
               </div>
             </div>
 
@@ -75,38 +77,39 @@
           <div class="mt-8 pt-8 border-t border-gray-200">
             <h4 class="font-semibold text-[#5a504f] text-lg mb-4">Síguenos en redes</h4>
             <div class="flex gap-4">
-              <a href="#"
-                class="w-10 h-10 bg-[#fbba16] text-white rounded-full flex items-center justify-center hover:bg-[#e6a914] transition-colors">
-                <i class="fab fa-facebook-f"></i>
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/HombresTrabajando62?locale=es_LA" target="_blank"
+                rel="noopener noreferrer"
+                class="w-10 h-10 bg-[#1877F2] text-white rounded-full flex items-center justify-center hover:bg-[#145DBF] transition-all duration-200 shadow-md hover:shadow-lg">
+                <i class="fab fa-facebook-f text-lg"></i>
               </a>
-              <a href="#"
-                class="w-10 h-10 bg-[#fbba16] text-white rounded-full flex items-center justify-center hover:bg-[#e6a914] transition-colors">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#"
-                class="w-10 h-10 bg-[#fbba16] text-white rounded-full flex items-center justify-center hover:bg-[#e6a914] transition-colors">
-                <i class="fab fa-whatsapp"></i>
+
+              <!-- WhatsApp -->
+              <a href="https://wa.me/59172228377?text=Hola%20Hombres%20Trabajando!%20Quisiera%20más%20información%20sobre%20sus%20servicios."
+                target="_blank" rel="noopener noreferrer"
+                class="w-10 h-10 bg-[#25D366] text-white rounded-full flex items-center justify-center hover:bg-[#20b358] transition-all duration-200 shadow-md hover:shadow-lg">
+                <i class="fab fa-whatsapp text-lg"></i>
               </a>
             </div>
           </div>
-        </div>
+        </div> <!-- 👈 CIERRE de la primera columna -->
 
-        <!-- Formulario -->
+        <!-- Formulario - SEGUNDA COLUMNA -->
         <div class="bg-white rounded-2xl p-8 shadow-xl">
           <h3 class="text-2xl font-bold text-[#5a504f] mb-8">Envíanos un mensaje</h3>
 
-          <form class="space-y-6">
+          <form action="https://formspree.io/f/mvgvbnwq" method="POST" class="space-y-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label for="name" class="block text-lg font-medium text-[#5a504f] mb-2">Nombre *</label>
-                <input id="name" type="text" required
+                <input id="name" name="nombre" type="text" required
                   class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-[#fbba16] focus:ring-2 focus:ring-[#fbba16]/20 transition-all"
                   placeholder="Tu nombre completo" />
               </div>
 
               <div>
                 <label for="email" class="block text-lg font-medium text-[#5a504f] mb-2">Correo *</label>
-                <input id="email" type="email" required
+                <input id="email" name="correo" type="email" required
                   class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-[#fbba16] focus:ring-2 focus:ring-[#fbba16]/20 transition-all"
                   placeholder="tunombre@correo.com" />
               </div>
@@ -114,28 +117,28 @@
 
             <div>
               <label for="phone" class="block text-lg font-medium text-[#5a504f] mb-2">Teléfono</label>
-              <input id="phone" type="tel"
+              <input id="phone" name="telefono" type="tel"
                 class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-[#fbba16] focus:ring-2 focus:ring-[#fbba16]/20 transition-all"
-                placeholder="+1 (555) 123-4567" />
+                placeholder="+591 70000000" />
             </div>
 
             <div>
               <label for="service" class="block text-lg font-medium text-[#5a504f] mb-2">Servicio de interés</label>
-              <select id="service"
+              <select id="service" name="servicio"
                 class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-[#fbba16] focus:ring-2 focus:ring-[#fbba16]/20 transition-all">
                 <option value="">Selecciona un servicio</option>
-                <option value="construccion">Construcción civil</option>
-                <option value="electricidad">Servicios eléctricos</option>
-                <option value="plomeria">Plomería</option>
-                <option value="obra-fina">Obra fina</option>
-                <option value="mantenimiento">Mantenimiento y refacción</option>
-                <option value="seguridad">Instalación de cámaras</option>
+                <option value="Construcción civil">Construcción civil</option>
+                <option value="Servicios eléctricos">Servicios eléctricos</option>
+                <option value="Plomería">Plomería</option>
+                <option value="Obra fina">Obra fina</option>
+                <option value="Mantenimiento y refacción">Mantenimiento y refacción</option>
+                <option value="Instalación de cámaras">Instalación de cámaras</option>
               </select>
             </div>
 
             <div>
               <label for="message" class="block text-lg font-medium text-[#5a504f] mb-2">Mensaje *</label>
-              <textarea id="message" rows="5" required
+              <textarea id="message" name="mensaje" rows="5" required
                 class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-[#fbba16] focus:ring-2 focus:ring-[#fbba16]/20 transition-all resize-none"
                 placeholder="Describe tu proyecto o consulta..."></textarea>
             </div>
@@ -145,9 +148,10 @@
               Enviar mensaje
             </button>
           </form>
-        </div>
-      </div>
-    </div>
+        </div> <!-- 👈 CIERRE de la segunda columna -->
+
+      </div> <!-- 👈 CIERRE del grid -->
+    </div> <!-- 👈 CIERRE del container -->
   </section>
 </template>
 

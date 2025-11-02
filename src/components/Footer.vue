@@ -8,7 +8,7 @@
         <h3 class="text-xl font-bold text-white mb-4">Hombres Trabajando</h3>
         <p class="text-sm leading-relaxed">
           Especialistas en construcción civil, mantenimiento y seguridad. 
-          Más de 10 años transformando espacios con calidad y profesionalismo.
+          Más de 15 años transformando espacios con calidad y profesionalismo.
         </p>
       </div>
 
@@ -30,18 +30,16 @@
         <p class="text-sm">Av. Principal 123, Ciudad</p>
         <div class="flex space-x-4 my-3">
           <!-- Iconos de redes sociales -->
-          <a href="#" class="hover:text-[#fbba16]">
+          <a href="https://www.facebook.com/HombresTrabajando62?locale=es_LA" class="hover:text-[#fbba16]">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="#" class="hover:text-[#fbba16]">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#" class="hover:text-[#fbba16]">
+      
+          <a href="https://wa.me/59172228377?text=Hola%20Hombres%20Trabajando!%20Quisiera%20más%20información%20sobre%20sus%20servicios." class="hover:text-[#fbba16]">
             <i class="fab fa-whatsapp"></i>
           </a>
         </div>
-        <p class="text-sm">+1 (555) 123-4567</p>
-        <p class="text-sm">info@hombrestrabajando.com</p>
+        <p class="text-sm">+591 7222-8377</p>
+        <p class="text-sm">nestorcarvajalht@gmail.com</p>
       </div>
     </div>
 
