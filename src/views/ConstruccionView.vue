@@ -40,9 +40,11 @@
 
         <!-- MODAL -->
         <transition name="fade">
-            <div v-if="modalAbierto" class="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4"
-                @click.self="cerrarModal">
-                <div class="bg-white rounded-2xl max-w-3xl w-full overflow-hidden shadow-xl">
+            <div v-if="modalAbierto"
+                class="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4 pointer-events-none">
+                <div class="bg-white rounded-2xl max-w-3xl w-full overflow-hidden shadow-xl pointer-events-auto"
+                    @click.stop>
+
                     <!-- Imagen -->
                     <img :src="proyectoSeleccionado.image" class="w-full h-[400px] object-cover" />
                     <!-- Contenido -->

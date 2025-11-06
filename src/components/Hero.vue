@@ -26,7 +26,7 @@
 
       <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-200">
         <div>
-          <p class="text-4xl font-bold text-[#fbba16]">15+</p>
+          <p class="text-4xl font-bold text-[#fbba16]">18+</p>
           <p>Años de Experiencia</p>
         </div>
         <div>
