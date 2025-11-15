@@ -8,11 +8,11 @@
 
         <!-- TÍTULO -->
         <h2 class="text-4xl font-extrabold text-[#5a504f] text-center mb-6">
-            Mantenimiento y Refacción
+            Cursos
         </h2>
 
         <p class="text-center text-[#5a504f] max-w-3xl mx-auto mb-16">
-            Servicios para prevenir daños y prolongar la vida útil de tu construcción.
+            Cursos de construcción, electricidad, plomería, cámaras de seguridad y mantenimiento.
         </p>
 
         <!-- GALERÍA DE PROYECTOS -->
@@ -99,16 +99,15 @@ function cerrarModal() {
 // 🧱 Lista de proyectos de construcción
 const proyectosConstruccion = [
     {
-        titulo: 'Impermeabilización, Protección Antifiltraciones',
-        descripcion: 'Invierte en prevención: evita costosas reparaciones por daños de agua.',
-        descripcionLarga:
-            'Nuestro servicio de impermeabilización detecta y sella puntos críticos donde el agua puede filtrarse. Utilizamos técnicas probadas y materiales duraderos para crear una protección completa en cubiertas y muros, asegurando que tu propiedad se mantenga seca, sana y libre de problemas estructurales futuros.',
+        titulo: 'Curso de Construcción Civil',
+        descripcion: 'Aprende con expertos y lleva tus proyectos al siguiente nivel.',
+        descripcionLarga: 'Formación práctica en construcción civil donde desarrollarás habilidades reales mediante casos de estudio y ejercicios simulados. Cubrimos: planificación de obras, control de costos, técnicas constructivas eficientes, seguridad industrial y solución de problemas comunes en obra.',
         image:
             'https://res.cloudinary.com/dughcx6qb/image/upload/v1760062601/muro_perimetral.jpg',
         facebook: 'https://www.facebook.com/hombrestrabajando',
     },
     {
-        titulo: 'Rehabilitación de Estructuras',
+        titulo: 'Curso de Electricidad domiciliaria y comercial',
         descripcion: 'Soluciones técnicas para estabilizar y prolongar la vida de tu edificio.',
         descripcionLarga:
             'Intervenimos en los elementos estructurales críticos de tu propiedad. Especialistas en reparar y sellar grietas estructurales, recuperar juntas de dilatación dañadas y reforzar cimientos afectados, devolviendo la capacidad portante y asegurando la durabilidad de la construcción.',
@@ -117,15 +116,32 @@ const proyectosConstruccion = [
         facebook: 'https://www.facebook.com/hombrestrabajando',
     },
     {
-        titulo: 'Reparación de Cubiertas y Goteras',
-        descripcion: 'Solucionamos fugas y goteras de forma definitiva para proteger tu hogar.',
-        descripcionLarga:
-            'Atendemos y reparamos urgentemente todo tipo de filtraciones en techos y cubiertas. Localizamos el origen de la fuga, reparamos la zona afectada y aplicamos tratamientos de sellado para evitar daños mayores en cielos, muros y la estructura de tu propiedad.',
+        titulo: 'Curso de Plomería',
+        descripcion: 'Domina instalaciones hidrosanitarias y sistemas de tuberías para hogares y edificios.',
+        descripcionLarga: 'Curso completo de plomería que abarca desde conceptos básicos hasta instalaciones avanzadas en sistemas residenciales y comerciales. Aprenderás instalación de tuberías, conexiones sanitarias, sistemas de drenaje, reparación de fugas, normativas de construcción y solución de problemas comunes.',
         image:
             'https://res.cloudinary.com/dughcx6qb/image/upload/v1760062601/casa_construccion.jpg',
         facebook: 'https://www.facebook.com/hombrestrabajando',
     },
-    
+    {
+        titulo: 'Curso de obra fina',
+        descripcion: 'Domina las técnicas de acabados y terminaciones profesionales en construcción.',
+        descripcionLarga: 'Curso especializado en obra fina que te enseñará las mejores técnicas de acabados en construcción. Aprenderás aplicaciones de revoques, colocación de cerámicos, instalación de cielorrasos, trabajos en drywall, pintura profesional, colocación de pisos y todos los detalles que hacen la diferencia en la calidad final de una obra.',
+        image:
+            'https://res.cloudinary.com/dughcx6qb/image/upload/v1760062601/casa_construccion.jpg',
+        facebook: 'https://www.facebook.com/hombrestrabajando',
+    },
+    {
+        titulo: 'Curso de camaras de seguridad',
+        descripcion: 'Conviértete en especialista en sistemas de videovigilancia residencial y comercial.',
+        descripcionLarga: 'Programa técnico especializado en sistemas de seguridad electrónica. Aprenderás instalación de cámaras análogas e IP, configuración de sistemas de grabación, transmisión de video en red, integración con alarmas, normativas de privacidad y mantenimiento preventivo. Certificación incluida para trabajar profesionalmente.',
+        image:
+            'https://res.cloudinary.com/dughcx6qb/image/upload/v1760062601/casa_construccion.jpg',
+        facebook: 'https://www.facebook.com/hombrestrabajando',
+    },
+
+
+
 ]
 </script>
 

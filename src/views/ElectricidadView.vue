@@ -104,7 +104,7 @@ const proyectosConstruccion = [
         descripcionLarga:
             'Realizamos la instalación eléctrica domiciliaria completa con materiales de primera calidad y estrictas normas de seguridad. Servicio incluye cableado estructurado, colocación de interruptores, enchufes, iluminación interior/exterior y actualización de tableros eléctricos.',
         image:
-            'https://res.cloudinary.com/dughcx6qb/image/upload/v1760062601/muro_perimetral.jpg',
+            'https://res.cloudinary.com/dughcx6qb/image/upload/v1762904813/Instalacion_Domiciliaria_nhhupv.jpg',
         facebook: 'https://www.facebook.com/hombrestrabajando',
     },
     {
@@ -113,7 +113,7 @@ const proyectosConstruccion = [
         descripcionLarga:
             'Diseñamos e implementamos instalaciones eléctricas a medida para comercios, oficinas y talleres. Nos especializamos en la correcta distribución de circuitos para equipos de alto consumo, sistemas de iluminación LED de larga duración y la optimización del cableado para máxima seguridad y eficiencia.',
         image:
-            'https://res.cloudinary.com/dughcx6qb/image/upload/v1760062601/vaciado_pisos.jpg',
+            'https://res.cloudinary.com/dughcx6qb/image/upload/v1762904817/instalacion-electricas-comercial_cf1tgu.png',
         facebook: 'https://www.facebook.com/hombrestrabajando',
     },
     {
@@ -122,7 +122,7 @@ const proyectosConstruccion = [
         descripcionLarga:
             'Identificamos y reparamos de manera eficiente cualquier falla en tu instalación eléctrica, desde cortocircuitos y sobrecargas hasta daños en tableros, cableado, enchufes e interruptores. Restauramos la energía y seguridad de tu hogar o negocio con materiales de calidad.',
         image:
-            'https://res.cloudinary.com/dughcx6qb/image/upload/v1760062601/casa_construccion.jpg',
+            'https://res.cloudinary.com/dughcx6qb/image/upload/v1762904815/Reparaciones_nvemtx.png',
         facebook: 'https://www.facebook.com/hombrestrabajando',
     },
     {
@@ -131,7 +131,7 @@ const proyectosConstruccion = [
         descripcionLarga:
             'Diagnosticamos la causa de tu factura de luz elevada. Localizamos si se debe a una mala instalación, un electrodoméstico defectuoso o un contrato inadecuado con la compañía eléctrica. Obtén claridad y control sobre tus gastos de energía.',
         image:
-            'https://res.cloudinary.com/dughcx6qb/image/upload/v1760062601/aceras_accesos.jpg',
+            'https://res.cloudinary.com/dughcx6qb/image/upload/v1762904816/Control_de_gastos_hft9e8.jpg',
         facebook: 'https://www.facebook.com/hombrestrabajando',
     },
 ]

@@ -74,10 +74,10 @@ const services = [
     image: 'https://res.cloudinary.com/dughcx6qb/image/upload/v1760062601/Obra_Fina_snvyjl.jpg',
   },
   {
-    id: 'mantenimiento',
-    title: 'Mantenimiento y refacción',
-    description: 'Reparaciones, refacciones y mantenimiento preventivo general.',
-    image: 'https://res.cloudinary.com/dughcx6qb/image/upload/v1760062601/Mentenimiento_y_refacciones_zdw1zp.jpg',
+    id: 'curso',
+    title: 'Curso',
+    description: 'Cursos de construcción, electricidad, plomería, cámaras de seguridad y mantenimiento.',
+    image: 'https://res.cloudinary.com/dughcx6qb/image/upload/v1762554157/2_adazyd.jpg',
   },
   {
     id: 'seguridad',

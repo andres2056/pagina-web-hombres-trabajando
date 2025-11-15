@@ -104,7 +104,7 @@ const proyectosConstruccion = [
         descripcionLarga:
             'Realizamos la instalación completa de redes de agua fría, caliente y desagüe, ya sea para una construcción desde cero o para ampliaciones en viviendas existentes. Incluye colocación de tuberías, conexiones a red principal y montaje de grifería.',
         image:
-            'https://res.cloudinary.com/dughcx6qb/image/upload/v1760062601/muro_perimetral.jpg',
+            'https://res.cloudinary.com/dughcx6qb/image/upload/v1762905331/Instalacion_de_sistemas_sanitarios_qaiu4m.jpg',
         facebook: 'https://www.facebook.com/hombrestrabajando',
     },
     {
@@ -113,7 +113,7 @@ const proyectosConstruccion = [
         descripcionLarga:
             'Realizamos inspecciones y limpiezas programadas de tus sistemas de tuberías, desagües y aparatos sanitarios. Este servicio preventivo identifica y soluciona pequeños problemas a tiempo, asegurando el óptimo funcionamiento y evitando reparaciones costosas futuras.',
         image:
-            'https://res.cloudinary.com/dughcx6qb/image/upload/v1760062601/vaciado_pisos.jpg',
+            'https://res.cloudinary.com/dughcx6qb/image/upload/v1762905332/Mantenimiento_preventivo_jkuyxx.jpg',
         facebook: 'https://www.facebook.com/hombrestrabajando',
     },
     {
@@ -122,7 +122,7 @@ const proyectosConstruccion = [
         descripcionLarga:
             'Realizamos un diagnóstico preciso para identificar la causa de la falla en tus sistemas de agua potable o alcantarillado. Ofrecemos soluciones definitivas que incluyen la reparación de tuberías, reemplazo de componentes dañados y la puesta a punto del sistema, asegurando su óptimo funcionamiento.',
         image:
-            'https://res.cloudinary.com/dughcx6qb/image/upload/v1760062601/casa_construccion.jpg',
+            'https://res.cloudinary.com/dughcx6qb/image/upload/v1762905332/reparaciones-plomeria_fkyxw5.jpg',
         facebook: 'https://www.facebook.com/hombrestrabajando',
     },
    

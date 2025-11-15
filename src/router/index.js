@@ -37,9 +37,9 @@ const router = createRouter({
       component: () => import('../views/ObraFinaView.vue'),
     },
     {
-      path: '/servicios/mantenimiento',
-      name: 'Mantenimiento',
-      component: () => import('../views/MantenimientoView.vue'),
+      path: '/servicios/curso',
+      name: 'Curso',
+      component: () => import('../views/CursoView.vue'),
     },
     {
       path: '/servicios/seguridad',
