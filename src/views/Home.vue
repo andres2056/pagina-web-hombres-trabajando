@@ -8,9 +8,9 @@
       <Servicios />
     </section>
 
-    <!-- <section id="proyectos" class="py-16 bg-[#9d9d9d]">
-      <Proyectos />
-    </section> -->
+    <section id="cursos" class="py-16 bg-[#9d9d9d]">
+      <Cursos />
+    </section>
 
     <section id="contacto" class="py-16 bg-[#9d9d9d]">
       <Contacto />
@@ -26,7 +26,7 @@
 import Hero from '../components/Hero.vue'
 import Servicios from '../components/Servicios.vue'
 
-import Proyectos from '../components/Proyectos.vue';
+import Cursos from '../components/Cursos.vue';
 import Contacto from '../components/Contacto.vue';
 
 

@@ -1,10 +1,6 @@
 <template>
     <section class="w-full bg-[#9d9d9d]/20 py-20 px-6 lg:px-12">
-        <!-- 🔙 BOTÓN VOLVER A INICIO -->
-        <button @click="irInicio"
-            class="mb-10 flex items-center gap-2 text-[#5a504f] hover:text-[#fbba16] font-semibold transition">
-            ← Volver al inicio
-        </button>
+       
 
         <!-- TÍTULO -->
         <h2 class="text-4xl font-extrabold text-[#5a504f] text-center mb-6">

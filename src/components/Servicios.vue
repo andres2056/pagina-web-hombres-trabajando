@@ -73,12 +73,12 @@ const services = [
     description: 'Enlucidos, pintura, pisos, cielos falsos y terminaciones impecables.',
     image: 'https://res.cloudinary.com/dughcx6qb/image/upload/v1760062601/Obra_Fina_snvyjl.jpg',
   },
-  {
-    id: 'curso',
-    title: 'Curso',
-    description: 'Cursos de construcción, electricidad, plomería, cámaras de seguridad y mantenimiento.',
-    image: 'https://res.cloudinary.com/dughcx6qb/image/upload/v1762554157/2_adazyd.jpg',
-  },
+  // {
+  //   id: 'curso',
+  //   title: 'Curso',
+  //   description: 'Cursos de construcción, electricidad, plomería, cámaras de seguridad y mantenimiento.',
+  //   image: 'https://res.cloudinary.com/dughcx6qb/image/upload/v1762554157/2_adazyd.jpg',
+  // },
   {
     id: 'seguridad',
     title: 'Cámaras de seguridad',

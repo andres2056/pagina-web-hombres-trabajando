@@ -8,12 +8,20 @@ const router = createRouter({
     { path: '/', name: 'Home', component: Home },
     { path: '/proyecto', name: 'Proyecto', component: Proyecto },
 
-    // 🧱 Servicios principales
-    {
-      path: '/servicios',
-      name: 'Servicios',
-      component: () => import('../views/Servicios.vue'),
-    },
+    // // 🧱 Servicios principales
+    // {
+    //   path: '/servicios',
+    //   name: 'Servicios',
+    //   component: () => import('../views/Servicios.vue'),
+    // },
+
+    // //Cursos
+    // {
+    //   path: '/servicios/cursos',
+    //   name: 'Cursos',
+    //   component: () => import('../views/Cursos.vue'),
+    // },
+
 
     // 🧰 Rutas específicas por categoría (lazy loading)
     {
@@ -36,11 +44,7 @@ const router = createRouter({
       name: 'ObraFina',
       component: () => import('../views/ObraFinaView.vue'),
     },
-    {
-      path: '/servicios/curso',
-      name: 'Curso',
-      component: () => import('../views/CursoView.vue'),
-    },
+  
     {
       path: '/servicios/seguridad',
       name: 'Seguridad',
