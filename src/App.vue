@@ -3,7 +3,12 @@
     <header class="bg-[#5a504f] text-white shadow-sm fixed top-0 left-0 w-full z-50">
       <div class="container mx-auto px-4 py-4 flex items-center justify-between">
         <!-- Cambié el h1 por un botón que también va a inicio -->
-        <button @click="goInicio" class="text-xl font-bold hover:opacity-90">Hombres Trabajando</button>
+        <button @click="goInicio" class="flex items-center gap-2 hover:opacity-90">
+          <img src="https://res.cloudinary.com/dughcx6qb/image/upload/v1764555794/Logo-HT-removebg-preview_xpohhw.png" alt="Logo"
+            class="w-10 h-10 object-contain" />
+          <span class="text-xl font-bold">Hombres Trabajando</span>
+        </button>
+
         <nav class="flex items-center gap-6">
           <!-- Enlace de Inicio -->
           <a href="#" @click.prevent="goInicio" class="hover:opacity-90 text-lg">Inicio</a>
