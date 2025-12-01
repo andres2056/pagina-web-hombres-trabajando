@@ -8,12 +8,12 @@
           <!-- Enlace de Inicio -->
           <a href="#" @click.prevent="goInicio" class="hover:opacity-90 text-lg">Inicio</a>
 
-          <!-- BOTÓN DEL MENÚ -->
+          <!-- BOTÓN DEL MENÚ SERVICIOS -->
           <div class="relative group">
             <a href="#servicios" class="hover:opacity-90 text-lg">Servicios ▼</a>
 
             <div class="group">
-              <!-- MENÚ -->
+              <!-- MENÚ SERVICIOS -->
               <div
                 class="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
 
@@ -39,7 +39,39 @@
               </div>
             </div>
           </div>
-          <a href="#cursos" class="hover:opacity-90 text-lg">Cursos</a>
+
+          <!-- BOTÓN DEL MENÚ CURSOS -->
+          <div class="relative group">
+            <a href="#cursos" class="hover:opacity-90 text-lg">Cursos ▼</a>
+
+            <div class="group">
+              <!-- MENÚ CURSOS -->
+              <div
+                class="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
+
+                <RouterLink to="/cursos/construccion" class="block px-4 py-2 text-[#5a504f] hover:bg-gray-100">
+                  Curso de Construcción Civil
+                </RouterLink>
+
+                <RouterLink to="/cursos/electricidad" class="block px-4 py-2 text-[#5a504f] hover:bg-gray-100">
+                  Curso de Electricidad
+                </RouterLink>
+
+                <RouterLink to="/cursos/plomeria" class="block px-4 py-2 text-[#5a504f] hover:bg-gray-100">
+                  Curso de Plomería
+                </RouterLink>
+
+                <RouterLink to="/cursos/obra-fina" class="block px-4 py-2 text-[#5a504f] hover:bg-gray-100">
+                  Curso de Obra Fina
+                </RouterLink>
+
+                <RouterLink to="/cursos/camaras-seguridad" class="block px-4 py-2 text-[#5a504f] hover:bg-gray-100">
+                  Curso de Cámaras de Seguridad
+                </RouterLink>
+              </div>
+            </div>
+          </div>
+
           <a href="#contacto" class="hover:opacity-90 text-lg">Contacto</a>
 
           <a href="#contacto" class="ml-4">

@@ -8,21 +8,6 @@ const router = createRouter({
     { path: '/', name: 'Home', component: Home },
     { path: '/proyecto', name: 'Proyecto', component: Proyecto },
 
-    // // 🧱 Servicios principales
-    // {
-    //   path: '/servicios',
-    //   name: 'Servicios',
-    //   component: () => import('../views/Servicios.vue'),
-    // },
-
-    // //Cursos
-    // {
-    //   path: '/servicios/cursos',
-    //   name: 'Cursos',
-    //   component: () => import('../views/Cursos.vue'),
-    // },
-
-
     // 🧰 Rutas específicas por categoría (lazy loading)
     {
       path: '/servicios/construccion',
@@ -44,11 +29,37 @@ const router = createRouter({
       name: 'ObraFina',
       component: () => import('../views/ObraFinaView.vue'),
     },
-  
     {
       path: '/servicios/seguridad',
       name: 'Seguridad',
       component: () => import('../views/SeguridadView.vue'),
+    },
+
+    // 📚 NUEVAS RUTAS PARA CURSOS
+    {
+      path: '/cursos/construccion',
+      name: 'CursoConstruccion',
+      component: () => import('../views/Curso-ConstruccionView.vue'),
+    },
+    {
+      path: '/cursos/electricidad',
+      name: 'CursoElectricidad', 
+      component: () => import('../views/Curso-ElectricidadView.vue'),
+    },
+    {
+      path: '/cursos/plomeria',
+      name: 'CursoPlomeria',
+      component: () => import('../views/Curso-PlomeriaView.vue'),
+    },
+    {
+      path: '/cursos/obra-fina',
+      name: 'CursoObraFina',
+      component: () => import('../views/Curso-Obra-FinaView.vue'),
+    },
+    {
+      path: '/cursos/camaras-seguridad',
+      name: 'CursoCamarasSeguridad',
+      component: () => import('../views/Curso-Camaras-SeguridadView.vue'),
     },
   ],
 })
